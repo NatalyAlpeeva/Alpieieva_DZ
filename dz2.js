@@ -6,7 +6,9 @@ var age = prompt("Вкажіть ваш вік", "1" );
 console.log(typeof age, Number(age));
 
 let lastDigit = age % 10;
-if (age >= 10 && age <= 19) {
+if (age <= 0) {
+    console.log("Digit can't be 0 or negative")
+} else if (age >= 10 && age <= 19) {
 	console.log(age + " років")
 } else if (lastDigit == 0) {
 	console.log(age + " років")
